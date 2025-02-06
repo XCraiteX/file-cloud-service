@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Form, UploadFile
 
-from app.data.config import RESOURCES_PATH
+from app.data.config import RESOURCES_PATH, HOST_LINK
 from app.utils.uuid import generate_uuid
 from app.base.db import create_file
 
@@ -21,6 +21,6 @@ async def upload_file(file: UploadFile):
 
         if status:
 
-            return { 'status': 'OK', 'details': 'File successfully uploaded!', 'uuid': uuid }
+            return { 'status': 'OK', 'details': 'File successfully uploaded!', 'uuid': HOST_LINK + 'file' + uuid }
 
     return { 'status': 'Error', 'details': 'Internal server error!'}

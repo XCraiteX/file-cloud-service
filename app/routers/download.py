@@ -7,7 +7,7 @@ from app.base.db import get_path_by_uuid
 
 download_router = APIRouter()
 
-@download_router.get('/cloud/download/{uuid}')
+@download_router.get('/cloud/file/{uuid}')
 async def download_file(uuid: str):
 
     path = await get_path_by_uuid(uuid)
