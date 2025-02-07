@@ -21,6 +21,6 @@ async def upload_file(file: UploadFile):
 
         if status:
 
-            return { 'status': 'OK', 'details': 'File successfully uploaded!', 'uuid': HOST_LINK + 'file' + uuid }
+            return { 'status': 'OK', 'details': 'File successfully uploaded!', 'uuid': HOST_LINK + '/file/' + uuid }
 
     return { 'status': 'Error', 'details': 'Internal server error!'}
