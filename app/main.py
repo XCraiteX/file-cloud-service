@@ -14,8 +14,4 @@ async def startup():
     
     await create_tables()
     print('Started')
-
-@app.get('/')
-async def main():
-    return { 'dsds': 'dsdsd' }
     
