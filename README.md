@@ -5,7 +5,7 @@
 ## Стек
 - **FastAPI**
 - **SQLAlchemy**
-- **SQLite + aiosqlite driver**
+- **SQLite + aiosqlite драйвер**
 
 ## Устновка
 
@@ -18,7 +18,7 @@ git clone https://github.com/XCraiteX/file-cloud-service.git
 ### 2. Замените ссылки в `data/config.py`
 
 ```bash
-# Your host link or localhost for tests
+# Ваша ссылка на локал хосте для тестов
 HOST_LINK = 'http://localhost:3000'
 ```
 
