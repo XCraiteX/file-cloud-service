@@ -1,34 +1,34 @@
-# File Cloud Microservice
+# File Cloud Микросервис
 
-**Simple file cloud microservice on FastAPI**
+**Простой микросервис для хранения файлов в облаке на FastAPI**
 
-## Stack
+## Стек
 - **FastAPI**
 - **SQLAlchemy**
 - **SQLite + aiosqlite driver**
 
-## Setup
+## Устновка
 
-### 1. Clone the repository
+### 1. Клонируйте репозиторий
 
 ```bash
 git clone https://github.com/XCraiteX/file-cloud-service.git
 ```
 
-### 2. Replace links in `data/config.py`
+### 2. Замените ссылки в `data/config.py`
 
 ```bash
 # Your host link or localhost for tests
 HOST_LINK = 'http://localhost:3000'
 ```
 
-### 3. Run server
+### 3. Запуск сервера
 
 ```bash
 uvicorn app.main:app --port 3300  
 ```
 
-### 4. Setup nginx 
+### 4. Конфигурация Nginx
 
 ```nginx
 location /cloud/ {
@@ -37,12 +37,12 @@ location /cloud/ {
 }
 ```
 
-### 5. Use your API for your projects
+### 5. Используйте API в своих проектах
 <br>
 
-# Using API
+# Использование API
 
-### 1. Upload to Host | `POST` - `HOST_LINK` `/cloud/upload`
+### 1. Выгрузка файлов | `POST` - `HOST_LINK` `/cloud/upload`
 
 - **Parameters**
 
@@ -52,7 +52,7 @@ location /cloud/ {
 }
 ```
   
-###  > Response
+###  > Ответ
 
 - Successfull
 
@@ -73,9 +73,9 @@ location /cloud/ {
 }
 ```
 
-### 2. Download from Host | `GET` - `HOST_LINK` `/cloud/file/uuid`
+### 2. Скачивание и использование файла | `GET` - `HOST_LINK` `/cloud/file/uuid`
 
--  Response
+-  Ответ
 
 ```JSON
 File Response
