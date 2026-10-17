@@ -42,7 +42,7 @@ location /cloud/ {
 
 # Использование API
 
-### 1. Выгрузка файлов | `POST` - `HOST_LINK` `/cloud/upload`
+### 1. Выгрузка файлов | `POST` - `/cloud/upload`
 
 - **Parameters**
 
@@ -73,7 +73,7 @@ location /cloud/ {
 }
 ```
 
-### 2. Скачивание и использование файла | `GET` - `HOST_LINK` `/cloud/file/uuid`
+### 2. Скачивание и использование файла | `GET` - `/cloud/file/uuid`
 
 -  Ответ
 
