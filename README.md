@@ -19,7 +19,7 @@ git clone https://github.com/XCraiteX/file-cloud-service.git
 
 ```bash
 # Ваша ссылка на локал хосте для тестов
-HOST_LINK = 'http://localhost:3000'
+HOST_LINK = 'http://127.0.0.1:3000'
 ```
 
 ### 3. Запуск сервера
@@ -32,7 +32,7 @@ uvicorn app.main:app --port 3300
 
 ```nginx
 location /cloud/ {
-    proxy_pass http://localhost:3300;
+    proxy_pass http://127.0.0.1:3300;
     proxy_http_version 1.1;
 }
 ```
